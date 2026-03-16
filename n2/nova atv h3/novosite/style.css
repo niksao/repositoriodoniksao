@@ -1,0 +1,9 @@
+body{
+    background-color:brown ;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 44;
+    padding: 20px;
+    border: 2px solid red;
+    max-width: 80%;
+
+}
