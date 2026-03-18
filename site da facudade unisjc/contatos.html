@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <style>
+        .linha-abaixo {
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            display: inline-block; /* Faz a linha ter apenas o tamanho do texto */
+        }
+    </style>
 </head>
 <body>
 
     <p>Contatos</p>
 
-    <img src="../unisjc.png" alt="Texto alternativo aqui">
+    <img src="../unisjc.png" alt="Texto alternativo aqui" width="200" height="100" align="left">>>
 
-    <a href="http://127.0.0.1:5501/home.html">Unisjc home???</a>
+    <form action="envio.php" method="POST">
+    <h2></h2>
+
+    <a href="http://127.0.0.1:5501/home.html" style="position: relative; top: 50px; left: 600px;">Unisjc home</a>
+
+    <br>
+    <br>
+    <br>
 
     <form action="envio.php" method="POST">
     <h2>Entre em Contato</h2>
-    
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-    
+
+    <p class="linha-abaixo">enim sed vero voluptatum hic laudantium animi?</p>
+
+    <br>
+
     <label for="email">E-mail:</label>
     <input type="email" id="email" name="email" placeholder="seu@email.com" required>
     
-    <label for="mensagem">Mensagem:</label>
+    <br>
+    <br>
+
+    <label for="nome">Assunto:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu assunto" required>
+    
+    <br>
+    <br>
+
+    <label for="mensagem">Descricao:</label>
     <textarea id="mensagem" name="mensagem" rows="4"></textarea>
     
     <button type="submit">Enviar</button>
