@@ -1,0 +1,59 @@
+body {
+    background-color: #0000FF;
+}
+
+h1 {
+  color: #fefefe;
+}
+
+nav {
+  color: #fefefe;
+font-size: 25px;
+
+}
+
+section {
+  color: #fefefe;
+font-size: 25px;
+}
+
+footer {
+  color: #fefefe;
+font-size: 25px;
+}
+
+.navbar {
+    background-color: #fefefe !important;
+}
+
+.navbar .navbar-brand {
+    color: #000000 !important;
+}
+
+.navbar .navbar-brand {
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-nav .nav-link.active {
+    color: #000000;
+}
+
+/* Estado iniciaaal du link */
+a {                
+  color: rgb(0, 0, 0); /* Cor iniciaaaaal dele */
+  transition: 0.3s;    /* Transição di cor */
+}
+
+/* Estado du link au passaaaaaar o mouse */
+a:hover {
+  color: red !important; /* Cor qui iscolhi pra mudar nu link */
+}
+
+
+
+
+
