@@ -3,3 +3,8 @@
     font-weight: bold;
     text-align: right;
 }
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+}
