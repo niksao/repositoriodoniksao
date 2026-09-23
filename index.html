@@ -5,28 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unes home</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body class="meu link">
-    <header>Unes home</header>
-    <nav>Bem vindo a nossa universidade nova.</nav>
 
-<a href="quem somos.html" style="position: relative; top: 50px; left: 600px;">Quem somos</a>
+<!-- INÍCIO DA NAVBAR -->
+ <nav class="navbar navbar-expand-lg navbar-green bg-sucess">
+    <div class="container-fluid">
+        <!-- Logo / Nome da Marca -->
+        <a class="navbar-brand" href="#">Unisjc</a>
 
-<img src="unisjc.png" alt="Texto alternativo aqui" width="200" height="100" align="left">>>
-<div class="grid-container">
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
+
+        
+
+        <!-- Botão de Hambúrguer (para telas menores/mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ir para a página inicial">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem somos.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Conheça mais sobre nós">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inscricao.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Faça sua inscrição agora!">Inscrição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatos.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Fale conosco">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- FIM DA NAVBAR -->
+
+
+
+
+
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <img src="unisjc.png" class="rounded border border-3 border-warning img-fluid" alt="Texto alternativo aqui" width="200" height="100">
+
+
+  
+
+
+
+
+
+  <nav style="margin-top: 15px;">Unisjc home</nav>
 </div>
-<img src="universitarios.jpg" alt="Texto alternativo aqui" width="900" height="500">>
 
-<section>oi Lorem ipsum dolor sit amet. Eos eveniet ipsum ut consequatur enim sed vero voluptatum hic laudantium animi? Et totam dolorem eum fuga illo sit fugiat aspernatur.
 
-Rem blanditiis velit At ipsa itaque est distinto totam sed sunt debitis ut adipisci aliquid non officiis harum aut temporibus galisum. Ut odio ullam sed voluptas officia a assumenda exercitationem ea facere temporibus. Et odit nemo ea repellendus harum est autem magnam et reiciendis maiores est autem fuga et atque pariatur ut voluptas quas.
+<header class="d-flex justify-content-center align-items-center">
+</header>
+<h1 class="text-center">Bem vindo a nossa universidade nova.</h1>
 
-Et labore dicta rem molestiae dolor sed voluptatibus iste est quod voluptatem eos comodi quas ad exercitationem quia sit aliquam impedit. Nam quia consectetur sit officiis voluptatem non quasi officiis ut quasi exercitationem. Hic nihil mollitia vel sunt beatae a incidunt ullam est arquiteto voluptate.</section>
+
+
+
+<!-- Aumentei o margin-top para 150px para jogar ela bem mais para baixo -->
+ <img src="universitarios.jpg" class="border border-warning rounded img-fluid d-block mx-auto" alt="Texto alternativo aqui" width="900" height="500" style="margin-top: 150px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<section>Oi, Seja extremadamente bem vindo e recebido em nossa nova universidade sr ou sra, Esperamos de coração que este nosso site atenda a todas as suas espectativas e que com ele, tú consigas realizar quaisquer serviços que precise em nossa brilhante instituição de ensino privada! Faça um bom uso e tenha um bom dia... ou noite, Ou tarde.</section>
+
+
+<!-- 1. O HTML do Modal pode ficar aqui no corpo -->
+    <div class="modal fade" id="meuPopup" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Não esqueça de realizar sua inscrição!!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Se ainda não fez isso.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- O resto do conteúdo do seu site fica aqui... -->
+
+
+    <!-- 2. O JS do Bootstrap vem no final -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- 3. E o script que abre o modal vem logo abaixo do JS do Bootstrap -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var meuModal = new bootstrap.Modal(document.getElementById('meuPopup'));
+        meuModal.show();
+      });
+    </script>
+
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script> <!-- faiz funcioná as mensagens tutorial na navbar -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

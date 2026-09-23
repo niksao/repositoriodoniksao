@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="unes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisjc Inscrição</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body class="meu link">
+
+<!-- INÍCIO DA NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-green bg-sucess">
+    <div class="container-fluid">
+        <!-- Logo / Nome da Marca -->
+        <a class="navbar-brand" href="#">Unisjc</a>
+
+        <!-- Botão de Hambúrguer (para telas menores/mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ir para a página inicial">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem somos.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Conheça mais sobre nós">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inscricao.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Faça sua inscrição agora!">Inscrição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatos.html" 
+                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Fale conosco">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- FIM DA NAVBAR -->
+
+
+
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <img src="unisjc.png" class="rounded border border-3 border-warning img-fluid" alt="Texto alternativo aqui" width="200" height="100">
+    
+
+
+
+    <nav style="margin-top: 15px;">Unisjc área de matrícula</nav>
+</div>
+
+
+
+
+  <header class="d-flex justify-content-center align-items-center">
+  </header>
+  <h1 class="text-center">Bem vindo a nossa área de matrícula!!!</h1>
+  
+
+
+
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        
+                        <h2 class="mb-3 text-center">Inscrição</h2>
+
+                        <!-- Barra de Progresso do Bootstrap -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span id="progress-text" class="text-muted small">0% preenchido</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div id="form-progress-bar" class="progress-bar bg-warning progress-bar-striped" 
+                                     role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form id="cadastroForm">
+                            <!-- Campo de Nome -->
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control required-field" id="nome" placeholder="Digite seu nome">
+                            </div>
+
+                            <!-- Campo de E-mail -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control required-field" id="email" placeholder="seu@email.com">
+                            </div>
+
+                            <!-- Campo de Senha -->
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Senha</label>
+                                <input type="password" class="form-control required-field" id="senha" placeholder="Sua senha">
+                            </div>
+
+                            <!-- Select (Opções) -->
+                            <div class="mb-3">
+                                <label for="estado" class="form-label">Estado</label>
+                                <select class="form-select required-field" id="estado">
+                                    <option value="" selected disabled>Selecione...</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="Outro">Outro...</option>
+                                </select>
+                            </div>
+
+                            <!-- Campo de seu Cpf -->
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">Cpf</label>
+                                <input type="number" class="form-control required-field" id="cpf" placeholder="Seu cpf">
+                            </div>
+
+                            <!-- Campo de Cpfs Familiares -->
+                            <div class="mb-3">
+                                <label for="cpfs-familiares" class="form-label">Cpfs de toda a sua familia</label>
+                                <input type="number" class="form-control required-field" id="cpfs-familiares" placeholder="Seus cpfs familiares">
+                            </div>
+
+                            <!-- Botão de Envio -->
+                            <div class="d-grid">
+                                <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Cadastrar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript para controlar a barra -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const requiredFields = document.querySelectorAll(".required-field");
+            const progressBar = document.getElementById("form-progress-bar");
+            const progressText = document.getElementById("progress-text");
+            const submitBtn = document.getElementById("submitBtn");
+
+            const totalFields = requiredFields.length;
+
+            function updateProgress() {
+                let filledCount = 0;
+
+                requiredFields.forEach(field => {
+                    // Verifica se o campo foi preenchido ou se uma opção válida foi selecionada no select
+                    if (field.value.trim() !== "" && field.value !== "Selecione...") {
+                        filledCount++;
+                    }
+                });
+
+                // Calcula a porcentagem
+                const percentage = Math.round((filledCount / totalFields) * 100);
+
+                // Atualiza a barra de progresso visualmente
+                progressBar.style.width = percentage + "%";
+                progressBar.setAttribute("aria-valuenow", percentage);
+                progressText.textContent = percentage + "% preenchido";
+
+                // Altera cores e libera o botão quando atingir 100%
+                if (percentage === 100) {
+                    progressBar.classList.remove("bg-warning");
+                    progressBar.classList.add("bg-success");
+                    submitBtn.removeAttribute("disabled");
+                } else {
+                    progressBar.classList.remove("bg-success");
+                    progressBar.classList.add("bg-warning");
+                    submitBtn.setAttribute("disabled", "true");
+                }
+            }
+
+            // Monitora alterações em tempo real em todos os campos obrigatórios
+            requiredFields.forEach(field => {
+                field.addEventListener("input", updateProgress);
+                field.addEventListener("change", updateProgress); // Necessário para o select
+            });
+
+            // Executa na inicialização
+            updateProgress();
+        });
+    </script>
+</body>
+
+<section>Oi, Espero que tenha conseguido. E também espero que tenha um bom dia... ou noite, Ou tarde.</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- se nas outras pags q n sejam index tiver esse dps das mens de tutorial nao dá certo -->
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script> <!-- faiz funcioná as mensagens tutorial na navbar -->
+
+
+</body>
+</html>
