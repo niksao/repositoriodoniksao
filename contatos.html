@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unisjc Contatos</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="unisjc.css">
     <style>
@@ -18,106 +18,90 @@
 </head>
 <body>
 
-
     <!-- INÍCIO DA NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-green bg-sucess">
-    <div class="container-fluid">
-        <!-- Logo / Nome da Marca -->
-        <a class="navbar-brand" href="#">Unisjc</a>
+    <nav class="navbar navbar-expand-lg navbar-green bg-sucess">
+        <div class="container-fluid">
+            <!-- Logo / Nome da Marca -->
+            <a class="navbar-brand" href="#">Unisjc</a>
 
-        <!-- Botão de Hambúrguer (para telas menores/mobile) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Botão de Hambúrguer (para telas menores/mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Links de Navegação -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" 
-                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ir para a página inicial">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quem somos.html" 
-                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Conheça mais sobre nós">Quem somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="inscricao.html" 
-                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Faça sua inscrição agora!">Inscrição</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contatos.html" 
-                       data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Fale conosco">Contatos</a>
-                </li>
-            </ul>
+            <!-- Links de Navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" 
+                           data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Ir para a página inicial">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem somos.html" 
+                           data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Conheça mais sobre nós">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inscricao.html" 
+                           data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Faça sua inscrição agora!">Inscrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatos.html" 
+                           data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Fale conosco">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA NAVBAR -->
+
+    <!-- LOGO E TEXTO CONTATOS -->
+    <div class="container mt-3">
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+            <img src="unisjclogo.png" class="img-fluid" alt="Texto alternativo aqui" width="200" height="100">
+            <nav style="margin-top: 15px;">Contatos</nav>
         </div>
     </div>
-</nav>
-<!-- FIM DA NAVBAR -->
 
+    <!-- TÍTULO DA PÁGINA -->
+    <h1 class="text-center my-4">Fale conosco.</h1>
 
-<div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <img src="unisjclogo.png" class="img-fluid" alt="Texto alternativo aqui" width="200" height="100">
-    
+    <!-- SEÇÃO DO FORMULÁRIO -->
+    <section class="container mb-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <form action="envio.php" method="POST" class="p-4" style="max-width: 500px; width: 100%;">
+                <h2 class="mb-3">Entre em Contato</h2>
+        
+                <div class="mb-3">
+                    <label class="form-label">Seu nome completo é?</label>
+                    <input type="text" class="form-control" name="nome" placeholder="Seu nome" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required>
+                </div> 
+        
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Fale conosco:</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
 
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-
-
-
-
-    <nav style="margin-top: 15px;">Contatos</nav>
-  </div>
-
-
-
-  <header class="d-flex justify-content-center align-items-center">
-</header>
-<h1 class="text-center">Fale conosco.</h1>
-<section>
-    <div class="grid-container">
-    <p></p>
-    <p></p>
-</div>
-
-
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <form action="envio.php" method="POST" class="p-4" style="max-width: 500px; width: 100%;">
-            <h2>Entre em Contato</h2>
-    
-            <div class="mb-3">
-                <label class="form-label">Seu nome completo é?</label>
-                <input type="text" class="form-control" name="nome" placeholder="Seu nome" required>
-            </div>
-    
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail:</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required>
-            </div> 
-    
-            <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" required>
-            </div>
-    
-            <div class="mb-3">
-                <label for="mensagem" class="form-label">Fale conosco:</label>
-                <textarea id="mensagem" name="mensagem" class="form-control" rows="4"></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-        </form>
-    </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<!-- se nas outras pags q n sejam index tiver esse dps das mens de tutorial nao dá certo -->
-
-<script>
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-</script> <!-- faiz funcioná as mensagens tutorial na navbar -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script> <!-- faz funcionar as mensagens tutorial na navbar -->
 </body>
 </html>
-
-
-
-
